@@ -1269,10 +1269,10 @@ function Search(p) {
 
       if(bundle.link) {
         var next = bundle.link.filter(function(l){
-          return l.rel === "next";
+          return l.relation === "next";
         });
         if (next.length === 1) {
-          nextPageUrl = next[0].href 
+          nextPageUrl = next[0].url 
         }
       }
 
